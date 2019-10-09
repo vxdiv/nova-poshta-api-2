@@ -1,6 +1,6 @@
 <?php
 
-namespace LisDev\Delivery;
+namespace vxdiv\Delivery;
 
 /**
  * Nova Poshta API Class.
