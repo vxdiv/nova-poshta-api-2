@@ -569,7 +569,11 @@ class NovaPoshtaApi2
                 : $cities['data'][0];
         }
         // Error
-        (!$data) and $error = 'City was not found';
+        $error = null;
+        if (empty($data)) {
+            $error = 'City was not found';
+        }
+
         // Return data in same format like NovaPoshta API
         return $this->prepare(
             array(
